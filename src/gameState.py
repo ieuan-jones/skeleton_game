@@ -35,7 +35,6 @@ class GameState(State):
         pygame.draw.rect(surface, (211, 187, 43), self.rect)
 
     def join(self, old_state=None):
-        print(old_state)
         if old_state == 'menu':
             self.rect = pygame.Rect((280, 200), (80,80))
             self.speed = [0,0]
