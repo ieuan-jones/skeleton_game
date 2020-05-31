@@ -9,7 +9,7 @@ class GameState(State):
         for event in events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
-                    self.stateManager.state = 'menu'
+                    self.stateManager.change_state('menu')
 
         if pygame.key.get_pressed()[pygame.K_LEFT]:
             self.speed[0] -= 2
